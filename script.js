@@ -4,6 +4,7 @@ let openBars = document.querySelector(".fa-bars")
 let main = document.getElementById("home");
 let body = document.getElementById("body");
 let mobileMenu = document.querySelector(".menu-bar-logo")
+let submitButton = document.querySelector(".right-side-button")
 
 openBars.addEventListener('click',(e)=>{
     header.classList.add("open-menu")
@@ -40,10 +41,3 @@ function toggleNav(){
 }
 
 
-const fetchData = async () => {
-    let data  = await fetch("https://api.github.com/users/KavyaMVG/repos");
-    data = await data.json();
-    console.log(data[0])
-}
-
-fetchData()

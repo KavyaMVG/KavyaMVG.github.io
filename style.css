@@ -32,7 +32,7 @@ body{
 }
 
 .overlay{
-    background: linear-gradient(currentColor, transparent);
+    background-color:rgb(0 0 0/.75); 
  }
 
  .no-scroll{
@@ -468,7 +468,7 @@ body{
      .menu-bar-logo{
          position: fixed;
          display: flex;
-         gap: 19rem;
+         gap: 18rem;
          padding: 1rem;
          inset: 0 0% 91% 0%;
 
@@ -512,6 +512,7 @@ body{
          font-size: 1.2em;
          margin-right: 1rem;
          line-height: 1.5rem;
+         position: relative;
      }
      .menu-text::after{
         content: "";
@@ -521,7 +522,7 @@ body{
         height: 2px;
         background: gray;
         opacity: .3;
-        top: 29%;
+        bottom: 2%;
     }
      .logo-x-mark-1{
          display: flex;
@@ -571,7 +572,7 @@ body{
     }
 
     section{
-        padding: 2rem .5rem;
+        padding: 2rem;
     }
     .title{
         text-transform: uppercase;
@@ -603,14 +604,14 @@ body{
     }
     .about-img{
         display: block;
-        margin: 1rem auto;
+        margin:  auto;
         padding: 1rem;
         background-color: #ecf0f3;
         border-radius: 5px; 
         box-shadow: 0px 20px 15px -6px #c2c3c7;
     }
     .skills-section{
-        padding: 1rem .5rem;
+        padding:2rem;
     }
     .title{
         font-size: 1.5rem;
@@ -635,8 +636,8 @@ body{
    
     }
     .project-section{
-        padding: 0 .5rem;
-        padding-bottom: 3rem;
+        padding: 2rem;
+        margin-bottom: 3rem;
     }
     .project-line1{
         padding: 1rem 0;
@@ -659,7 +660,7 @@ body{
     }
 
     .contact-section{
-        padding: 3rem .5rem 1rem .5rem;
+        padding:2rem;
     }
     .contact-section-line{
         padding: 1rem 0;
@@ -785,11 +786,12 @@ body{
     }
 
     section{
-        margin-left: .5rem;
-        padding-right: 1rem;
+        margin:0;
+        padding: 3rem;
     } 
     .skills-section{
         margin: 0;
+        padding: 3rem;
     }
     .about-img{
         margin-top: 2rem;
@@ -805,14 +807,14 @@ body{
         text-transform: capitalize;
     }
     .project-section{
-        padding: 0%;
+        padding:3rem;
         margin: 0;
     }
     .project-img{
         height: auto;
     }
     .contact-section{
-        padding: 4rem 0 0 0;
+        padding: 3rem;
         margin: 0 .5rem;
     }
     .d-grid{

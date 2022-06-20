@@ -9,6 +9,17 @@ let phone = document.getElementById("form-phone");
 let message = document.getElementById("form-message");
 let mobileMenu = document.querySelector(".menu-bar-logo");
 let submitButton = document.querySelector(".right-side-button");
+let mobileNavBtns = document.querySelectorAll(".mobile-nav");
+
+for(let btn of mobileNavBtns){
+  btn.addEventListener("click",()=>{
+    if (header.classList.contains("open-menu")) {
+      header.classList.remove("open-menu");
+      main.classList.remove("overlay");
+      body.classList.remove("no-scroll");
+    }
+  })
+}
 
 openBars.addEventListener("click", (e) => {
   header.classList.add("open-menu");
